@@ -7,7 +7,7 @@ import { astroImageTools } from 'astro-imagetools';
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/medlabs', // Set a path prefix.
+  //base: '/medlabs', // Set a path prefix.
   site: 'https://medlabs.github.io', // Use to generate your sitemap and canonical URLs in your final build.
   // Important!
   // Only official '@astrojs/*' integrations are currently supported by Astro.
