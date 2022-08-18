@@ -3,9 +3,11 @@ layout: '@/templates/BasePost.astro'
 title: Best linux disros for developers
 description: What is the best linux distribution for developers
 pubDate: 2020-08-24T00:15:00Z
-imgSrc: '/assets/images/image-post3.jpeg'
+imgSrc: '/assets/images/distros.jpg'
 imgAlt: 'Image post 3'
 ---
+
+
 
 There are hundreds of Gnu/Linux distributions around the world and there could be thounsands if we count the custom built ones.
 
@@ -37,7 +39,7 @@ The most important is how you feel while using a distribution...
 
 Usually a developer, let's say a web developer, needs an editor / IDE, the node.js , python, ruby, golang, java, nginx / Apache etc...
 
-All these packages are available for 99.99% of the linux distributions they can be installed using the package manager of the distro linke:
+All these packages are available for 99.99% of the linux distributions they can be installed using the package manager of the distro like:
 
 
 
@@ -57,7 +59,7 @@ or
 $ $sudo zypper install golang
 ```
 
-depends on distribution type.
+_depends on distribution type._
 
 
 
