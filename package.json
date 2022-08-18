@@ -9,9 +9,8 @@
     "preview": "astro preview",
     "clean": "rimraf dist",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.astro .",
-    "build-types": "tsc --noEmit --pretty",
-    "prepare": "husky install"
-  },
+    "build-types": "tsc --noEmit --pretty"
+ },
   "devDependencies": {
     "@astrojs/react": "^0.1.3",
     "@astrojs/rss": "^0.2.0",
