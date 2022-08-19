@@ -1,4 +1,4 @@
-name: MSLabs Dev Agency
+name: MSLabs Deployment workflow
 
 on:
   # Trigger the workflow every time you push to the `main` branch
