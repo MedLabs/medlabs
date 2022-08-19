@@ -15,13 +15,30 @@ permissions:
   id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v2          
-      - name: Install, build, and upload your site
-        uses: withastro/action@v0
+      build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Check out your repository using git
+          uses: actions/checkout@v2
+
+        - name: Use Node.js 16
+          uses: actions/setup-node@v2
+          with:
+            node-version: '16'
+            cache: 'pnpm'
+
+        # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
+        - name: Install dependencies
+          run: pnpm i
+
+        # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
+        - name: Build Astro
+          run: pnpm run build 
+
+        - name: Upload artifact
+          uses: actions/upload-pages-artifact@v1
+          with:
+            path: ./dist
 
   deploy:
     needs: build
