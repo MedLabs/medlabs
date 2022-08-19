@@ -29,6 +29,8 @@ jobs:
 
         - name: Install pnpm
           uses: pnpm/action-setup@v2.2.2
+          with:
+            version: 7
 
         # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
         - name: Install dependencies
