@@ -7,7 +7,8 @@ import { astroImageTools } from 'astro-imagetools';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://medlabs.github.io/medlabs', // Use to generate your sitemap and canonical URLs in your final build.
+  base: '/medlabs'
+  site: 'https://medlabs.github.io', // Use to generate your sitemap and canonical URLs in your final build.
   // Important!
   // Only official '@astrojs/*' integrations are currently supported by Astro.
   // Add 'experimental.integrations: true' to make 'astro-robots-txt' working
